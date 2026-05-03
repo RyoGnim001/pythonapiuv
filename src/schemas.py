@@ -18,3 +18,7 @@ class ProductOut(Schema):
     price = Float()
     description = String()
 
+class ProductFilter(Schema):
+    search = String(load_default=None)
+    min_price = Float(load_default=None)
+    max_price = Float(load_default=None)
